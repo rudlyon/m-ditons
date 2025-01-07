@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { TouchableOpacity } from "react-native";
 import { Link } from "expo-router";
 import { useState } from "react";
@@ -8,25 +8,27 @@ export default function TableauxLink() {
   const [linkText, setLinkText] = useState("Tableau-hiver");
 
   return (
-    <>
+    <View style={styles.linkContainer}>
       <TouchableOpacity
-        style={styles.linkContainer}
         onPressIn={() => setLinkText("Tableau-hiver")}
         onPressOut={() => setLinkText(">")}
+        activeOpacity={1}
       >
         <Link style={styles.link} href="./tableau-hiver">
           {linkText}
         </Link>
       </TouchableOpacity>
-    </>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
   linkContainer: {
-    flex: 1,
-    justifyContent: "flex-start",
+    // flex: 1,
+    justifyContent: "flex-end",
     alignItems: "flex-end",
+    width: "auto",
+    marginBottom: 10,
   },
   link: {
     borderStyle: "solid",
@@ -38,6 +40,7 @@ const styles = StyleSheet.create({
     paddingLeft: 15,
     paddingRight: 15,
     marginRight: 20,
+    zIndex: 10,
   },
   leaf: {
     width: 50,
