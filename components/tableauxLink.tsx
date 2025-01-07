@@ -4,18 +4,12 @@ import { TouchableOpacity } from "react-native";
 import { Link } from "expo-router";
 import { useState } from "react";
 
-export default function TableauxLink() {
-  const [linkText, setLinkText] = useState("Tableau-hiver");
-
+export default function TableauxLink(props: any) {
   return (
-    <View style={styles.linkContainer}>
-      <TouchableOpacity
-        onPressIn={() => setLinkText("Tableau-hiver")}
-        onPressOut={() => setLinkText(">")}
-        activeOpacity={1}
-      >
-        <Link style={styles.link} href="./tableau-hiver">
-          {linkText}
+    <View style={props.style}>
+      <TouchableOpacity>
+        <Link style={styles.link} href={props.href}>
+          {props.children}
         </Link>
       </TouchableOpacity>
     </View>
@@ -23,13 +17,6 @@ export default function TableauxLink() {
 }
 
 const styles = StyleSheet.create({
-  linkContainer: {
-    // flex: 1,
-    justifyContent: "flex-end",
-    alignItems: "flex-end",
-    width: "auto",
-    marginBottom: 10,
-  },
   link: {
     borderStyle: "solid",
     borderColor: "black",

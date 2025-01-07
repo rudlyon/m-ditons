@@ -16,7 +16,7 @@ export default function tableauHiver() {
         }}
       ></ImageBackground>
       <View>
-        <Text>hiver</Text>
+        <Text>Hiver</Text>
       </View>
     </GestureHandlerRootView>
   );
