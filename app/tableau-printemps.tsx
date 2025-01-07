@@ -1,14 +1,14 @@
 import { View, Text, StyleSheet } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { ImageBackground } from "react-native";
-import hiver from "../assets/images/hiver.jpg";
-import TableauxLink from "@/components/tableauxLink";
+import printemps from "../assets/images/printemps.jpg";
+import TableauxLink from "../components/tableauxLink";
 
-export default function tableauHiver() {
+export default function tableauPrintemps() {
   return (
     <GestureHandlerRootView>
       <ImageBackground
-        source={hiver}
+        source={printemps}
         style={{
           width: "100%",
           height: "100%",
@@ -16,32 +16,29 @@ export default function tableauHiver() {
           alignItems: "center",
         }}
       >
-        <TableauxLink
-          href="/tableau-printemps"
-          style={styles.linkContainerPrintemps}
-        >
-          Printemps
+        <TableauxLink href="/tableau-été" style={styles.linkContainerHiver}>
+          Été
         </TableauxLink>
-        <TableauxLink href="/" style={styles.linkContainerAutomne}>
-          Automne
+        <TableauxLink href="/tableau-hiver" style={styles.linkContainerEte}>
+          Hiver
         </TableauxLink>
       </ImageBackground>
       <View>
-        <Text>Hiver</Text>
+        <Text>Printemps</Text>
       </View>
     </GestureHandlerRootView>
   );
 }
 
 const styles = StyleSheet.create({
-  linkContainerPrintemps: {
+  linkContainerHiver: {
     position: "absolute",
     bottom: 0,
     right: 10,
     width: "auto",
     marginBottom: 10,
   },
-  linkContainerAutomne: {
+  linkContainerEte: {
     position: "absolute",
     bottom: 0,
     left: 10,

@@ -9,17 +9,11 @@ export default function Index() {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <ImageBackground source={automne} style={styles.background}>
         <Feuille />
-        <TableauxLink
-          href="./tableau-hiver.tsx"
-          style={styles.linkContainerHiver}
-        >
+        <TableauxLink href="/tableau-hiver" style={styles.linkContainerHiver}>
           Hiver
         </TableauxLink>
-        <TableauxLink
-          href="./tableau-printemps.tsx"
-          style={styles.linkContainerPrintemps}
-        >
-          Printemps
+        <TableauxLink href="/tableau-été" style={styles.linkContainerEte}>
+          Été
         </TableauxLink>
       </ImageBackground>
     </GestureHandlerRootView>
@@ -35,13 +29,14 @@ const styles = StyleSheet.create({
   linkContainerHiver: {
     position: "absolute",
     bottom: 0,
-    right: 0,
+    right: 10,
     width: "auto",
     marginBottom: 10,
   },
-  linkContainerPrintemps: {
+  linkContainerEte: {
     position: "absolute",
     bottom: 0,
+    left: 10,
     width: "auto",
     marginBottom: 10,
   },

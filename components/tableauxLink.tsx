@@ -26,7 +26,6 @@ const styles = StyleSheet.create({
     padding: 10,
     paddingLeft: 15,
     paddingRight: 15,
-    marginRight: 20,
     zIndex: 10,
   },
   leaf: {
