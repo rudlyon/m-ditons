@@ -22,7 +22,10 @@ export default function tableauHiver() {
         >
           Printemps
         </TableauxLink>
-        <TableauxLink href="/" style={styles.linkContainerAutomne}>
+        <TableauxLink
+          href="/tableau-automne"
+          style={styles.linkContainerAutomne}
+        >
           Automne
         </TableauxLink>
       </ImageBackground>

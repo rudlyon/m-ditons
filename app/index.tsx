@@ -1,21 +1,17 @@
-import { ImageBackground, StyleSheet, View } from "react-native";
-import { GestureHandlerRootView } from "react-native-gesture-handler";
-import automne from "../assets/images/automne.jpg";
-import Feuille from "../components/feuille";
-import TableauxLink from "../components/tableauxLink";
+import { ImageBackground, StyleSheet, View, Text } from "react-native";
+import fondécran from "../assets/images/fond.jpg";
+import Cards from "../components/cards";
+
 export default function Index() {
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
-      <ImageBackground source={automne} style={styles.background}>
-        <Feuille />
-        <TableauxLink href="/tableau-hiver" style={styles.linkContainerHiver}>
-          Hiver
-        </TableauxLink>
-        <TableauxLink href="/tableau-ete" style={styles.linkContainerEte}>
-          Été
-        </TableauxLink>
-      </ImageBackground>
-    </GestureHandlerRootView>
+    <ImageBackground style={styles.background} source={fondécran}>
+      <View style={styles.gridContainer}>
+        <Cards href="/tableau-printemps">Les saisons</Cards>
+        <Cards href="/tableau-printemps">Les élements</Cards>
+        <Cards href="/tableau-printemps">Les saisons</Cards>
+        <Cards href="/tableau-printemps">Les élements</Cards>
+      </View>
+    </ImageBackground>
   );
 }
 
@@ -23,20 +19,20 @@ const styles = StyleSheet.create({
   background: {
     width: "100%",
     height: "100%",
-    zIndex: -5,
+    backgroundSize: "auto",
+    alignItems: "center",
+    justifyContent: "center",
   },
-  linkContainerHiver: {
-    position: "absolute",
-    bottom: 0,
-    right: 10,
+
+  linkContainerSaisons: {
     width: "auto",
-    marginBottom: 10,
+    margin: 10,
+    opacity: 0.5,
   },
-  linkContainerEte: {
-    position: "absolute",
-    bottom: 0,
-    left: 10,
-    width: "auto",
-    marginBottom: 10,
+  gridContainer: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
