@@ -4,7 +4,7 @@ import { ImageBackground } from "react-native";
 import été from "../assets/images/été.jpg";
 import TableauxLink from "../components/tableauxLink";
 
-export default function tableauEte() {
+export default function tableauÉte() {
   return (
     <GestureHandlerRootView>
       <ImageBackground
@@ -16,18 +16,18 @@ export default function tableauEte() {
           alignItems: "center",
         }}
       >
+        <TableauxLink href="/" style={styles.linkContainerPrintemps}>
+          Automne
+        </TableauxLink>
         <TableauxLink
           href="/tableau-printemps"
-          style={styles.linkContainerPrintemps}
+          style={styles.linkContainerAutomne}
         >
           Printemps
         </TableauxLink>
-        <TableauxLink href="/" style={styles.linkContainerAutomne}>
-          Automne
-        </TableauxLink>
       </ImageBackground>
       <View>
-        <Text>Hiver</Text>
+        <Text>Été</Text>
       </View>
     </GestureHandlerRootView>
   );

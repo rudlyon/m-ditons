@@ -12,7 +12,7 @@ export default function Index() {
         <TableauxLink href="/tableau-hiver" style={styles.linkContainerHiver}>
           Hiver
         </TableauxLink>
-        <TableauxLink href="/tableau-été" style={styles.linkContainerEte}>
+        <TableauxLink href="/tableau-ete" style={styles.linkContainerEte}>
           Été
         </TableauxLink>
       </ImageBackground>

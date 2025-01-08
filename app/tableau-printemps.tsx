@@ -16,7 +16,7 @@ export default function tableauPrintemps() {
           alignItems: "center",
         }}
       >
-        <TableauxLink href="/tableau-été" style={styles.linkContainerHiver}>
+        <TableauxLink href="/tableau-ete" style={styles.linkContainerHiver}>
           Été
         </TableauxLink>
         <TableauxLink href="/tableau-hiver" style={styles.linkContainerEte}>
