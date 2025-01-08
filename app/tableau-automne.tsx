@@ -1,10 +1,10 @@
 import { View, Text, StyleSheet } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { ImageBackground } from "react-native";
-import été from "../assets/images/été.jpg";
+import été from "../assets/images/automne.jpg";
 import TableauxLink from "../components/tableauxLink";
 
-export default function tableauEte() {
+export default function TableauAutomne() {
   return (
     <GestureHandlerRootView>
       <ImageBackground
@@ -17,16 +17,13 @@ export default function tableauEte() {
         }}
       >
         <TableauxLink
-          href="/tableau-automne"
+          href="/tableau-hiver"
           style={styles.linkContainerPrintemps}
         >
-          Automne
+          Hiver
         </TableauxLink>
-        <TableauxLink
-          href="/tableau-printemps"
-          style={styles.linkContainerAutomne}
-        >
-          Printemps
+        <TableauxLink href="/tableau-ete" style={styles.linkContainerAutomne}>
+          Été
         </TableauxLink>
       </ImageBackground>
       <View>

@@ -4,7 +4,6 @@ import automne from "../assets/images/automne.jpg";
 import Feuille from "../components/feuille";
 import TableauxLink from "../components/tableauxLink";
 export default function Index() {
-  const Hiver = "Hiver";
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <ImageBackground source={automne} style={styles.background}>

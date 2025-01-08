@@ -2,7 +2,6 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import { TouchableOpacity } from "react-native";
 import { Link } from "expo-router";
-import { useState } from "react";
 
 export default function TableauxLink(props: any) {
   return (
