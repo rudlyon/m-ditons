@@ -3,11 +3,12 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import automne from "../assets/images/automne.jpg";
 import Feuille from "../components/feuille";
 import TableauxLink from "../components/tableauxLink";
+import TasDeFeuilles from "@/components/tasdefeuilles";
 export default function tableauAutomne() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <ImageBackground source={automne} style={styles.background}>
-        <Feuille />
+        <TasDeFeuilles />
         <TableauxLink href="/tableau-hiver" style={styles.linkContainerHiver}>
           Hiver
         </TableauxLink>
