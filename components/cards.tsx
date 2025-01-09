@@ -1,6 +1,5 @@
 import React from "react";
-import { StyleSheet, View, Text } from "react-native";
-import { TouchableOpacity } from "react-native";
+import { StyleSheet, View, TouchableOpacity, Text } from "react-native";
 import { Link } from "expo-router";
 
 export default function Cards(props: any) {
@@ -8,10 +7,7 @@ export default function Cards(props: any) {
     <View style={props.style}>
       <TouchableOpacity>
         <Link style={styles.card} href={props.href}>
-          {props.children}
-          <View style={styles.textContainer}>
-            <Text style={styles.text}>{props.children}</Text>
-          </View>
+          <Text style={styles.text}>{props.children}</Text>
         </Link>
       </TouchableOpacity>
     </View>
@@ -32,17 +28,19 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 20,
     backgroundColor: "white",
-    justifyContent: "flex-end", // Align items to the bottom
+    justifyContent: "center", // Center items vertically
     alignItems: "center", // Center items horizontally
     padding: 10,
     opacity: 0.5,
     margin: 10,
   },
   textContainer: {
-    width: "100%",
-    alignItems: "center",
+    flex: 1, // Take all available space
+    justifyContent: "center", // Center items vertically
+    alignItems: "center", // Center items horizontally
   },
   text: {
-    textAlign: "center",
+    justifyContent: "center", // Center items vertically
+    alignItems: "center", // Center items horizontally
   },
 });

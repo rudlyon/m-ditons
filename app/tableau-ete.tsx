@@ -39,14 +39,14 @@ export default function tableauEte() {
 const styles = StyleSheet.create({
   linkContainerPrintemps: {
     position: "absolute",
-    bottom: 0,
+    bottom: 50,
     right: 10,
     width: "auto",
     marginBottom: 10,
   },
   linkContainerAutomne: {
     position: "absolute",
-    bottom: 0,
+    bottom: 50,
     left: 10,
     width: "auto",
     marginBottom: 10,

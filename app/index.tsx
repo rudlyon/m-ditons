@@ -6,10 +6,10 @@ export default function Index() {
   return (
     <ImageBackground style={styles.background} source={fondécran}>
       <View style={styles.gridContainer}>
-        <Cards href="/tableau-printemps">Les saisons</Cards>
-        <Cards href="/tableau-printemps">Les élements</Cards>
-        <Cards href="/tableau-printemps">Les saisons</Cards>
-        <Cards href="/tableau-printemps">Les élements</Cards>
+        <Cards href="/tableau-automne">Les saisons</Cards>
+        <Cards href="/tableau-automne">Les élements</Cards>
+        <Cards href="/tableau-automne">Les sens</Cards>
+        <Cards href="/tableau-automne">La contemplation</Cards>
       </View>
     </ImageBackground>
   );

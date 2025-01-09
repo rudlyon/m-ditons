@@ -44,7 +44,7 @@ function Feuille({ style }: { style: ViewStyle }) {
 }
 
 export default function TasDeFeuilles() {
-  const feuilles = Array.from({ length: 100 }).map((_, index) => {
+  const feuilles = Array.from({ length: 200 }).map((_, index) => {
     const randomX = Math.random() * width;
     const randomY = Math.random() * height;
     return (

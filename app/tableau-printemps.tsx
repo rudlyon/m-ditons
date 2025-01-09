@@ -23,9 +23,6 @@ export default function tableauPrintemps() {
           Hiver
         </TableauxLink>
       </ImageBackground>
-      <View>
-        <Text>Printemps</Text>
-      </View>
     </GestureHandlerRootView>
   );
 }
@@ -33,14 +30,14 @@ export default function tableauPrintemps() {
 const styles = StyleSheet.create({
   linkContainerHiver: {
     position: "absolute",
-    bottom: 0,
+    bottom: 50,
     right: 10,
     width: "auto",
     marginBottom: 10,
   },
   linkContainerEte: {
     position: "absolute",
-    bottom: 0,
+    bottom: 50,
     left: 10,
     width: "auto",
     marginBottom: 10,

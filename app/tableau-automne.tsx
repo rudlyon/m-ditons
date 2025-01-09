@@ -8,6 +8,7 @@ export default function tableauAutomne() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <ImageBackground source={automne} style={styles.background}>
+        <Feuille />
         <TasDeFeuilles />
         <TableauxLink href="/tableau-hiver" style={styles.linkContainerHiver}>
           Hiver
